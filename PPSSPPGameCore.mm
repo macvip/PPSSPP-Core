@@ -38,6 +38,7 @@
 #include "Core/Host.h"
 #include "Core/SaveState.h"
 #include "Core/System.h"
+#include "Core/HLE/sceUtility.h"
 
 #define SAMPLERATE 44100
 #define SIZESOUNDBUFFER 44100 / 30 * 4
@@ -102,7 +103,9 @@
     g_Config.internalDataDirectory = [directoryString UTF8String];
     g_Config.iShowFPSCounter       = true;
     g_Config.bFrameSkipUnthrottle  = false;
-
+    g_Config.iLanguage = PSP_SYSTEMPARAM_LANGUAGE_CHINESE_TRADITIONAL;
+    g_Config.bEnableCheats = true;
+    
     _coreParam.cpuCore      = CPU_JIT;
     _coreParam.gpuCore      = GPU_GLES;
     _coreParam.enableSound  = true;

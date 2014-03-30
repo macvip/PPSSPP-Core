@@ -105,6 +105,9 @@
     g_Config.bFrameSkipUnthrottle  = false;
     g_Config.iLanguage = PSP_SYSTEMPARAM_LANGUAGE_CHINESE_TRADITIONAL;
     g_Config.bEnableCheats = true;
+    g_Config.iTexScalingLevel = 4;
+    g_Config.iTexScalingType = 0;
+//    g_Config.bLowQualitySplineBezier = true;
     
     _coreParam.cpuCore      = CPU_JIT;
     _coreParam.gpuCore      = GPU_GLES;
@@ -116,8 +119,8 @@
     _coreParam.headLess     = false;
     _coreParam.unthrottle   = true;
 
-    _coreParam.renderWidth  = 480;
-    _coreParam.renderHeight = 272;
+    _coreParam.renderWidth  = 480*2;
+    _coreParam.renderHeight = 272*2;
     _coreParam.pixelWidth   = 480;
     _coreParam.pixelHeight  = 272;
 
